@@ -1,0 +1,7 @@
+"cell_type","RMSE","cor","maxCorName"
+"B_cell",0.02,0.98,"B_cells"
+"Cancer_cell",0.08,0.97,"Cancer_Epithelial"
+"Endothelial_cell",0.02,0.99,"Endothelial"
+"Fibroblast",0.04,0.98,"CAFs"
+"Myeloid_cell",0.01,0.98,"Myeloid"
+"T_cell",0.04,0.99,"T_cells"

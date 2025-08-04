@@ -1,0 +1,8 @@
+Rscript ../../scripts/run_InstaPrism.R -r self
+Rscript ../../scripts/run_InstaPrism.R -r indep --indep_ref_dir ../../Indep_scReference/BRCA_ref
+Rscript ../../scripts/run_TCA.R -r self
+Rscript ../../scripts/run_TCA.R -r indep --indep_ref_dir ../../Indep_scReference/BRCA_ref
+Rscript ../../scripts/run_Unico.R -r self
+Rscript ../../scripts/run_Unico.R -r indep --indep_ref_dir ../../Indep_scReference/BRCA_ref
+Rscript ../../scripts/run_bMIND_EPICunmix.R -r self
+Rscript ../../scripts/run_bMIND_EPICunmix.R -r indep --indep_ref_dir ../../Indep_scReference/BRCA_ref
