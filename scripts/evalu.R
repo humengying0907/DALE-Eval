@@ -412,7 +412,7 @@ get_expr_specificity = function(Z,cellType_stats_matrix,indep_mapping = NULL, to
     f = Z_means[marker_list[[cell_type]],]
     other_cts = setdiff(names(f), cell_type)
     
-    other_ct_avg_expr = rowMeans(f[, other_cts],na.rm = T)
+    other_ct_avg_expr = rowMeans(f[, other_cts, drop = FALSE],na.rm = T)
     other_ct_max_expr = apply(f[, other_cts, drop = FALSE], 1, max,na.rm = T)
     
     f$other_ct_avg_expr <- other_ct_avg_expr
