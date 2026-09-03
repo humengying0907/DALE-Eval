@@ -54,13 +54,17 @@ Rscript DALE_post_hoc_analysis.R -o BRCA_example
 Rscript DALE_by_limma_cor_summary.R -o BRCA_example
 Rscript DALE_a_priori_analysis.R -o BRCA_example
 Rscript DALE_Z_specificity.R -o BRCA_example
+Rscript DALE_Z_expr_ccc.R -o BRCA_example
 ```
 
 Core metrics (configurable):
 - Gene-level correlation 
 - Covariance/Expression specificity 
+- Expression specificity against Z-truth (Lin's CCC)
 - Post-hoc prioritized gene specificity
 - Performance summary table
+
+Note on the two expression-specificity outputs: `DALE_Z_specificity.R` reports the logFC contrast of each profile *on its own* (a gene-level specificity property, computed without reference to `Z_truth`), while `DALE_Z_expr_ccc.R` reports the per-gene Lin's CCC *between* the inferred and the ground-truth log-scale mean cell type profiles. The two are not monotonically related — a gene predicted to be sharply specific to the wrong cell type scores well on the former and negatively on the latter — so they answer different questions and should not be substituted for one another.
 
 The resulting summary files are available in the deconvSummary/ folder of each benchmarking object directory.
 

@@ -368,6 +368,35 @@ get_variation_specificity = function(Z,cellType_stats_matrix,indep_mapping = NUL
 }
 
 
+# log-scale mean expression profile (gene by cell type), with optional relabeling of the
+# inferred cell-types to their matched Z-truth names. Shared by get_expr_specificity()
+# (which scores this profile on its own) and get_expr_ccc() (which scores it against
+# Z-truth), so that both metrics are computed on exactly the same Z_means.
+compute_Z_mean_log = function(Z,indep_mapping = NULL,Z_scale = 'linear'){
+  Z_means_raw = compute_Z_mean(Z)
+
+  if(Z_scale == 'linear'){
+    row_min <- apply(Z_means_raw, 1, min, na.rm = TRUE)
+    shift_value <- ifelse(row_min < 0, -row_min, 0)
+    Z_means_shifted <- Z_means_raw + shift_value
+
+    Z_means = log2(Z_means_shifted + 1)
+  }else if(Z_scale == 'log2'){
+    Z_means = Z_means_raw
+  }else{
+    stop("invalid Z_scale provided. Available options are 'linear' and 'log2'")
+  }
+
+  if(!is.null(indep_mapping)){
+    stopifnot(all(indep_mapping$maxCorName %in% dimnames(Z)[[3]]))
+    Z_means = Z_means[,indep_mapping$maxCorName]
+    colnames(Z_means) = indep_mapping$cell_type
+  }
+
+  return(Z_means)
+}
+
+
 get_expr_specificity = function(Z,cellType_stats_matrix,indep_mapping = NULL, top_n = 10000, 
                                 Z_scale = 'linear'){
   # please note that the expression specificity (Z_means) will be present in log scales!
@@ -382,26 +411,12 @@ get_expr_specificity = function(Z,cellType_stats_matrix,indep_mapping = NULL, to
     gene_list[gene_list %in% rownames(Z)]
   })
   
-  Z_means_raw = compute_Z_mean(Z)
-  
-  if(Z_scale == 'linear'){
-    row_min <- apply(Z_means_raw, 1, min, na.rm = TRUE)
-    shift_value <- ifelse(row_min < 0, -row_min, 0)
-    Z_means_shifted <- Z_means_raw + shift_value 
-    
-    Z_means = log2(Z_means_shifted + 1)
-  }else if(Z_scale == 'log2'){
-    Z_means = Z_means_raw
-  }
-  
   if(is.null(indep_mapping)){
     stopifnot(all(dimnames(Z)[[3]] %in% names(marker_list)))
-  }else{
-    stopifnot(all(indep_mapping$maxCorName %in% dimnames(Z)[[3]]))
-    Z_means = Z_means[,indep_mapping$maxCorName]
-    colnames(Z_means) = indep_mapping$cell_type
   }
   
+  Z_means = compute_Z_mean_log(Z,indep_mapping,Z_scale)
+
   expr_specificity_res = list()
   
   compute_expr_specificity = function(cell_type){
@@ -412,7 +427,7 @@ get_expr_specificity = function(Z,cellType_stats_matrix,indep_mapping = NULL, to
     f = Z_means[marker_list[[cell_type]],]
     other_cts = setdiff(names(f), cell_type)
     
-    other_ct_avg_expr = rowMeans(f[, other_cts],na.rm = T)
+    other_ct_avg_expr = rowMeans(f[, other_cts, drop = FALSE],na.rm = T)
     other_ct_max_expr = apply(f[, other_cts, drop = FALSE], 1, max,na.rm = T)
     
     f$other_ct_avg_expr <- other_ct_avg_expr
@@ -438,6 +453,83 @@ get_expr_specificity = function(Z,cellType_stats_matrix,indep_mapping = NULL, to
   expr_specificity_table = do.call(rbind,lapply(colnames(Z_means),compute_expr_specificity))
   rownames(expr_specificity_table) = NULL
   return(expr_specificity_table)
+}
+
+
+######### expression specificity scored against Z-truth (Lin's CCC) #########
+# Lin's concordance correlation coefficient. Population (n-denominator) variances are
+# used so that ccc decomposes exactly as ccc = pearson * Cb, with Cb in (0,1] the bias
+# correction factor penalising any shift in mean or scale.
+lins_ccc = function(x,y){
+  ok = is.finite(x) & is.finite(y)
+  x = x[ok]; y = y[ok]
+  n = length(x)
+
+  if(n < 2){
+    return(c(ccc = NA_real_, pearson = NA_real_, Cb = NA_real_, n = n))
+  }
+
+  mx = mean(x); my = mean(y)
+  vx = sum((x - mx)^2)/n
+  vy = sum((y - my)^2)/n
+  sxy = sum((x - mx)*(y - my))/n
+
+  denom = vx + vy + (mx - my)^2
+  ccc = if(denom > 0) 2*sxy/denom else NA_real_
+  rho = if(vx > 0 && vy > 0) sxy/sqrt(vx*vy) else NA_real_
+  Cb = if(!is.na(ccc) && !is.na(rho) && rho != 0) ccc/rho else NA_real_
+
+  return(c(ccc = ccc, pearson = rho, Cb = Cb, n = n))
+}
+
+# Expression specificity as defined in the Methods: for each gene, Lin's CCC between the
+# inferred and the ground-truth log-scale mean cell type profiles, correlated ACROSS cell
+# types (Zbar_inferred[g,] vs Zbar_truth[g,]).
+#
+# Note this is a different question from get_expr_specificity(), which computes a logFC
+# contrast from a single profile and never looks at Z_truth. A gene whose inferred profile
+# is sharply specific to the WRONG cell type gets a high logFC but a negative CCC, so the
+# two are not monotonically related and should not be substituted for one another.
+#
+# genes: optional character vector to restrict the evaluation to (e.g. marker genes from
+#        get_marker_list()). Defaults to every gene shared by Z and Z_truth.
+get_expr_ccc = function(Z,Z_truth,indep_mapping = NULL,Z_scale = 'linear',
+                        Z_truth_scale = 'linear',genes = NULL){
+
+  Z_means = compute_Z_mean_log(Z,indep_mapping,Z_scale)
+  Z_truth_means = compute_Z_mean_log(Z_truth,NULL,Z_truth_scale)
+
+  shared_cts = intersect(colnames(Z_means),colnames(Z_truth_means))
+  if(length(shared_cts) < 2){
+    stop('at least 2 shared cell types between Z and Z_truth are required to compute a per-gene CCC across cell types')
+  }
+  if(length(shared_cts) < ncol(Z_truth_means)){
+    warning(paste('only',length(shared_cts),'of',ncol(Z_truth_means),
+                  'Z-truth cell types are present in Z; the CCC is computed over the shared ones only'))
+  }
+
+  shared_genes = intersect(rownames(Z_means),rownames(Z_truth_means))
+  if(!is.null(genes)){
+    shared_genes = intersect(shared_genes,genes)
+  }
+  stopifnot(length(shared_genes) > 0)
+
+  inferred = as.matrix(Z_means[shared_genes,shared_cts,drop = FALSE])
+  truth = as.matrix(Z_truth_means[shared_genes,shared_cts,drop = FALSE])
+
+  res = t(vapply(seq_along(shared_genes),
+                 function(i) lins_ccc(inferred[i,],truth[i,]),
+                 numeric(4)))
+
+  expr_ccc_table = data.frame(gene = shared_genes,
+                              ccc = res[,'ccc'],
+                              pearson = res[,'pearson'],
+                              Cb = res[,'Cb'],
+                              n_celltypes = res[,'n'],
+                              stringsAsFactors = FALSE)
+  rownames(expr_ccc_table) = NULL
+
+  return(expr_ccc_table)
 }
 
 
