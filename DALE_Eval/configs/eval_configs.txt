@@ -1,0 +1,12 @@
+config_id	bulk_input	bulk_normalization	expected_truth_type	filter_frac	min_frac	min_n_sample	baseline_bulk_id	baseline_truthFrac_regressed_id	baseline_InstaPrismFrac_regressed_id
+config01	wcpm	cpm	meancpm	truth_cellfrac	0.001	10	bulk-wcpm	bulk-wcpm__regress-truth_cellfrac	bulk-wcpm__regress-InstaPrismfrac_config01
+config02	sumcount	cpm	sumcount_cpm	truth_transcriptfrac	0.001	10	bulk-sumcount__norm-cpm	bulk-sumcount__norm-cpm__regress-truth_transcriptfrac	bulk-sumcount__norm-cpm__regress-InstaPrismfrac_config02
+config03	wcpm_centered_noise	cpm	meancpm	truth_cellfrac	0.001	10	bulk-wcpm_centered_noise	bulk-wcpm_centered_noise__regress-truth_cellfrac	bulk-wcpm_centered_noise__regress-InstaPrismfrac_config03
+config04	wcpm_mushift_noise	cpm	meancpm	truth_cellfrac	0.001	10	bulk-wcpm_mushift_noise	bulk-wcpm_mushift_noise__regress-truth_cellfrac	bulk-wcpm_mushift_noise__regress-InstaPrismfrac_config04
+config05	sumcount_centered_noise	cpm	sumcount_cpm	truth_transcriptfrac	0.001	10	bulk-sumcount_centered_noise__norm-cpm	bulk-sumcount_centered_noise__norm-cpm__regress-truth_transcriptfrac	bulk-sumcount_centered_noise__norm-cpm__regress-InstaPrismfrac_config05
+config06	sumcount_mushift_noise	cpm	sumcount_cpm	truth_transcriptfrac	0.001	10	bulk-sumcount_mushift_noise__norm-cpm	bulk-sumcount_mushift_noise__norm-cpm__regress-truth_transcriptfrac	bulk-sumcount_mushift_noise__norm-cpm__regress-InstaPrismfrac_config06
+config07	wcpm	cpm	meancpm	truth_cellfrac	0.001	10	bulk-wcpm	bulk-wcpm__regress-truth_cellfrac	bulk-wcpm__regress-InstaPrismfrac_config07
+config08	sumcount	cpm	sumcount_cpm	truth_transcriptfrac	0.001	10	bulk-sumcount__norm-cpm	bulk-sumcount__norm-cpm__regress-truth_transcriptfrac	bulk-sumcount__norm-cpm__regress-InstaPrismfrac_config08
+config09	wcpm	cpm	meancpm	truth_cellfrac	0.001	10	bulk-wcpm	bulk-wcpm__regress-truth_cellfrac	bulk-wcpm__regress-InstaPrismfrac_config01
+config02_tmm	sumcount	tmm	sumcount_cpm	truth_transcriptfrac	0.001	10	NA	NA	NA
+config02_uq	sumcount	uq	sumcount_cpm	truth_transcriptfrac	0.001	10	NA	NA	NA

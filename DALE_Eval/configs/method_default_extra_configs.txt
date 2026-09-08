@@ -1,0 +1,58 @@
+method	extra_arg	default_value	value_type	note
+BLUE	map_cell_types	true	logical	
+BLUE	use_test_samples	true	logical	
+BLUE	cell_type_col	cell_type	character	obs column in reference h5ad containing fine cell-type labels
+BLUE	sample_col	sample	character	obs column in reference h5ad containing sample/library labels
+BLUE	uv_path	NULL	null	Use default uv resolution
+BLUE	celltype_mapping_yaml	NULL	null	Use default BLUE cell type mapping
+BLUE	hyperparameters_yaml	NULL	null	Use default BLUE_hyperparameters.yaml
+BLUE	samplenum_per_ct	NULL	null	Optional override for BLUE pseudobulk.samplenum_per_ct
+BLUE	val_samplenum_per_patient	NULL	null	Optional override for BLUE pseudobulk.val_samplenum_per_patient
+BLUE	ref_sample_subset	false	logical	Subset reference h5ad by obs[sample_col] before training
+BLUE	ref_sample_subset_n	NULL	null	Number of unique reference sample/library ids to keep when ref_sample_subset=true
+BLUE	keep_temp	false	logical	Keep BLUE temp workdir after successful runs
+scTAPE	map_cell_types	true	logical	
+scTAPE	use_test_samples	true	logical	
+scTAPE	cell_type_col	cell_type	character	obs column in reference h5ad containing fine cell-type labels
+scTAPE	sample_col	sample	character	obs column in reference h5ad containing sample/library labels
+scTAPE	celltype_mapping_yaml	NULL	null	Use default scTAPE cell type mapping
+scTAPE	ref_sample_subset	false	logical	Subset reference h5ad by obs[sample_col] before training
+scTAPE	ref_sample_subset_n	NULL	null	Number of unique reference sample/library ids to keep when ref_sample_subset=true
+scTAPE	keep_temp	false	logical	Keep scTAPE temp workdir after successful runs
+InstaPrism	n_iter	1000	integer	
+InstaPrism	run_update	false	logical	
+InstaPrism	map_cell_types	true	logical	
+InstaPrism	use_test_samples	true	logical	
+InstaPrism	export_raw	false	logical	
+CIBERSORTx	username	NULL	null	Required in extra_args; not stored in source
+CIBERSORTx	token	NULL	null	Required in extra_args; not stored in source
+CIBERSORTx	singularity_container_path	DALE_Eval/external_modules/CIBERSORTx/hires.sif	character	Relative paths are resolved from repo root
+CIBERSORTx	map_cell_types	true	logical	
+CIBERSORTx	use_test_samples	true	logical	
+CIBERSORTx	use_limma_top_genes	false	logical	
+CIBERSORTx	top_n	100	integer	Used only when use_limma_top_genes=true
+CIBERSORTx	keep_temp	false	logical	
+TCA	map_cell_types	true	logical	
+TCA	use_test_samples	true	logical	
+TCA	use_limma_top_genes	false	logical	
+TCA	top_n	100	integer	Used only when use_limma_top_genes=true
+Unico	map_cell_types	true	logical	
+Unico	use_test_samples	true	logical	
+Unico	use_limma_top_genes	false	logical	
+Unico	top_n	100	integer	Used only when use_limma_top_genes=true
+bMIND	map_cell_types	true	logical	
+bMIND	use_test_samples	true	logical	
+bMIND	export_posterior	false	logical	Needed before EPICunmix_with_posterior
+bMIND	run_epicunmix	true	logical	Run EPICunmix after bMIND in run_bMIND.R
+bMIND	use_limma_top_genes	false	logical	
+bMIND	top_n	100	integer	Used only when use_limma_top_genes=true
+EPICunmix_with_posterior	map_cell_types	true	logical	
+EPICunmix_with_posterior	use_test_samples	true	logical	
+EPICunmix_with_posterior	use_limma_top_genes	false	logical	
+EPICunmix_with_posterior	top_n	100	integer	Used only when use_limma_top_genes=true
+EPICunmix_with_posterior	chunk_size	1000	integer	Number of genes per internal EPICunmix chunk
+ENIGMA	map_cell_types	true	logical	
+ENIGMA	use_test_samples	true	logical	
+ENIGMA	ENIGMAmode	L2	character	L2 logs as ENIGMAL2; trace logs as ENIGMAtrace
+ENIGMA	model_tracker	false	logical	Avoid ENIGMA internal model-tracking path unless explicitly needed
+ENIGMA	export_raw	false	logical	

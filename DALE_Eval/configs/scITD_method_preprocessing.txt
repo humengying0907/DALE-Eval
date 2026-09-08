@@ -1,0 +1,11 @@
+method	preprocess_mode
+BLUE	already_transformed
+bMIND	already_transformed
+CIBERSORTx	log1p
+ENIGMAL2	log1p
+ENIGMAtrace	log1p
+EPICunmix	already_transformed
+InstaPrism	log1p
+scTAPE	already_transformed
+TCA	already_transformed
+Unico	log1p

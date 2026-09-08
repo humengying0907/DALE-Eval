@@ -1,0 +1,2 @@
+scitd_config_id	deconv_config_ids	truth_type	use_test_samples	truth_gene_scope	method_gene_scope	method_sample_scope	drop_zero_profiles	zero_profile_tolerance	truth_donor_min_cells	truth_norm_method	scale_factor	vargenes_method	vargenes_thresh	scale_var	var_scale_power	donor_rank	gene_rank	tucker_type	rotation_type	inferred_negative_action	n_cores	random_seed
+tutorial_v1	config01,config02	sumcount	true	indep_ref_overlap	truth_selected_intersection	available_nonzero_by_result	true	1e-12	0	trim	10000	norm_var_pvals	0.1	true	2	5	10	regular	hybrid	gene_celltype_shift	4	10

@@ -1,0 +1,357 @@
+dataset	method	script	deconv_config	n_core	extra_args
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config01	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config01	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config01	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config01	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config01	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config02	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config02	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config02	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config02	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config02	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config02_tmm	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02_tmm	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02_tmm	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config02_tmm	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config02_tmm	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config02_tmm	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02_tmm	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config02_uq	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02_uq	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config02_uq	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config02_uq	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config02_uq	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config02_uq	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02_uq	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config03	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config03	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config03	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config03	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config03	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config03	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config03	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config03	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config03	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config03	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config04	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config04	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config04	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config04	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config04	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config04	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config04	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config04	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config04	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config04	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config05	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config05	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config05	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config05	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config05	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config05	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config05	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config05	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config05	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config05	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config06	15	
+BRCA_Bassez2021	BLUE	run_BLUE.py	config06	15	
+BRCA_Bassez2021	scTAPE	run_scTAPE.py	config06	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config06	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config06	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config06	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config06	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config06	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config06	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config06	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config07	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config07	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config07	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+BRCA_Bassez2021	InstaPrism	run_InstaPrism.R	config08	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config08	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config08	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config08	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config08	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config08	15	
+BRCA_Bassez2021	CIBERSORTx	run_CIBERSORTx.R	config09	15	
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+BRCA_Bassez2021	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+BRCA_Bassez2021	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false
+BRCA_Bassez2021	TCA	run_TCA.R	config09	15	
+BRCA_Bassez2021	Unico	run_Unico.R	config09	15	
+BRCA_Bassez2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	
+CRC_Pelka2021	InstaPrism	run_InstaPrism.R	config01	15	
+CRC_Pelka2021	BLUE	run_BLUE.py	config01	15	
+CRC_Pelka2021	scTAPE	run_scTAPE.py	config01	15	
+CRC_Pelka2021	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+CRC_Pelka2021	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+CRC_Pelka2021	TCA	run_TCA.R	config01	15	
+CRC_Pelka2021	Unico	run_Unico.R	config01	15	
+CRC_Pelka2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+CRC_Pelka2021	InstaPrism	run_InstaPrism.R	config02	15	
+CRC_Pelka2021	BLUE	run_BLUE.py	config02	15	
+CRC_Pelka2021	scTAPE	run_scTAPE.py	config02	15	
+CRC_Pelka2021	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+CRC_Pelka2021	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+CRC_Pelka2021	TCA	run_TCA.R	config02	15	
+CRC_Pelka2021	Unico	run_Unico.R	config02	15	
+CRC_Pelka2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+CRC_Pelka2021	InstaPrism	run_InstaPrism.R	config07	15	
+CRC_Pelka2021	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+CRC_Pelka2021	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+CRC_Pelka2021	TCA	run_TCA.R	config07	15	
+CRC_Pelka2021	Unico	run_Unico.R	config07	15	
+CRC_Pelka2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+CRC_Pelka2021	InstaPrism	run_InstaPrism.R	config08	15	
+CRC_Pelka2021	CIBERSORTx	run_CIBERSORTx.R	config08	15	
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=L2
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=trace
+CRC_Pelka2021	bMIND	run_bMIND.R	config08	15	export_posterior=true;run_epicunmix=false
+CRC_Pelka2021	TCA	run_TCA.R	config08	15	
+CRC_Pelka2021	Unico	run_Unico.R	config08	15	
+CRC_Pelka2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config08	15	
+CRC_Pelka2021	CIBERSORTx	run_CIBERSORTx.R	config09	15	
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+CRC_Pelka2021	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+CRC_Pelka2021	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false
+CRC_Pelka2021	TCA	run_TCA.R	config09	15	
+CRC_Pelka2021	Unico	run_Unico.R	config09	15	
+CRC_Pelka2021	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	
+LUAD_Kim2020	InstaPrism	run_InstaPrism.R	config01	15	
+LUAD_Kim2020	BLUE	run_BLUE.py	config01	15	samplenum_per_ct=10;val_samplenum_per_patient=4
+LUAD_Kim2020	scTAPE	run_scTAPE.py	config01	15	
+LUAD_Kim2020	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+LUAD_Kim2020	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+LUAD_Kim2020	TCA	run_TCA.R	config01	15	
+LUAD_Kim2020	Unico	run_Unico.R	config01	15	
+LUAD_Kim2020	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+LUAD_Kim2020	InstaPrism	run_InstaPrism.R	config02	15	
+LUAD_Kim2020	BLUE	run_BLUE.py	config02	15	samplenum_per_ct=10;val_samplenum_per_patient=4
+LUAD_Kim2020	scTAPE	run_scTAPE.py	config02	15	
+LUAD_Kim2020	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+LUAD_Kim2020	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+LUAD_Kim2020	TCA	run_TCA.R	config02	15	
+LUAD_Kim2020	Unico	run_Unico.R	config02	15	
+LUAD_Kim2020	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+LUAD_Kim2020	InstaPrism	run_InstaPrism.R	config07	15	
+LUAD_Kim2020	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+LUAD_Kim2020	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+LUAD_Kim2020	TCA	run_TCA.R	config07	15	
+LUAD_Kim2020	Unico	run_Unico.R	config07	15	
+LUAD_Kim2020	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+LUAD_Kim2020	InstaPrism	run_InstaPrism.R	config08	15	
+LUAD_Kim2020	CIBERSORTx	run_CIBERSORTx.R	config08	15	
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=L2
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=trace
+LUAD_Kim2020	bMIND	run_bMIND.R	config08	15	export_posterior=true;run_epicunmix=false
+LUAD_Kim2020	TCA	run_TCA.R	config08	15	
+LUAD_Kim2020	Unico	run_Unico.R	config08	15	
+LUAD_Kim2020	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config08	15	
+LUAD_Kim2020	CIBERSORTx	run_CIBERSORTx.R	config09	15	
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+LUAD_Kim2020	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+LUAD_Kim2020	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false
+LUAD_Kim2020	TCA	run_TCA.R	config09	15	
+LUAD_Kim2020	Unico	run_Unico.R	config09	15	
+LUAD_Kim2020	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	
+PBMC_1k1k	InstaPrism	run_InstaPrism.R	config01	15	
+PBMC_1k1k	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_1k1k	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_1k1k	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+PBMC_1k1k	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+PBMC_1k1k	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+PBMC_1k1k	TCA	run_TCA.R	config01	15	
+PBMC_1k1k	Unico	run_Unico.R	config01	15	
+PBMC_1k1k	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	use_limma_top_genes=true;top_n=3000;chunk_size=300
+PBMC_1k1k	InstaPrism	run_InstaPrism.R	config07	15	
+PBMC_1k1k	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+PBMC_1k1k	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+PBMC_1k1k	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+PBMC_1k1k	TCA	run_TCA.R	config07	15	
+PBMC_1k1k	Unico	run_Unico.R	config07	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config01	15	
+PBMC_Perez2022	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_Perez2022	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_Perez2022	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+PBMC_Perez2022	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+PBMC_Perez2022	TCA	run_TCA.R	config01	15	
+PBMC_Perez2022	Unico	run_Unico.R	config01	15	
+PBMC_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config02	15	
+PBMC_Perez2022	BLUE	run_BLUE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_Perez2022	scTAPE	run_scTAPE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=40
+PBMC_Perez2022	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+PBMC_Perez2022	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+PBMC_Perez2022	TCA	run_TCA.R	config02	15	
+PBMC_Perez2022	Unico	run_Unico.R	config02	15	
+PBMC_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config03	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config04	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config05	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config06	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config07	15	
+PBMC_Perez2022	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+PBMC_Perez2022	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+PBMC_Perez2022	TCA	run_TCA.R	config07	15	
+PBMC_Perez2022	Unico	run_Unico.R	config07	15	
+PBMC_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+PBMC_Perez2022	InstaPrism	run_InstaPrism.R	config08	15	
+PBMC_Perez2022	CIBERSORTx	run_CIBERSORTx.R	config08	15	
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=L2
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=trace
+PBMC_Perez2022	bMIND	run_bMIND.R	config08	15	export_posterior=true;run_epicunmix=false
+PBMC_Perez2022	TCA	run_TCA.R	config08	15	
+PBMC_Perez2022	Unico	run_Unico.R	config08	15	
+PBMC_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config08	15	
+PBMC_Perez2022	CIBERSORTx	run_CIBERSORTx.R	config09	15	
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+PBMC_Perez2022	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+PBMC_Perez2022	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false
+PBMC_Perez2022	TCA	run_TCA.R	config09	15	
+PBMC_Perez2022	Unico	run_Unico.R	config09	15	
+PBMC_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	
+PBMC_refined_1k1k	InstaPrism	run_InstaPrism.R	config01	15	
+PBMC_refined_1k1k	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40;cell_type_col=cell_type_refined
+PBMC_refined_1k1k	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40;cell_type_col=cell_type_refined
+PBMC_refined_1k1k	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+PBMC_refined_1k1k	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+PBMC_refined_1k1k	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false;use_limma_top_genes=true;top_n=3000
+PBMC_refined_1k1k	TCA	run_TCA.R	config01	15	
+PBMC_refined_1k1k	Unico	run_Unico.R	config01	15	
+PBMC_refined_1k1k	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	use_limma_top_genes=true;top_n=3000;chunk_size=300
+PBMC_refined_1k1k	InstaPrism	run_InstaPrism.R	config07	15	
+PBMC_refined_1k1k	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+PBMC_refined_1k1k	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+PBMC_refined_1k1k	TCA	run_TCA.R	config07	15	
+PBMC_refined_1k1k	Unico	run_Unico.R	config07	15	
+PBMC_refined_Perez2022	InstaPrism	run_InstaPrism.R	config01	15	
+PBMC_refined_Perez2022	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40;cell_type_col=cell_type_refined
+PBMC_refined_Perez2022	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=40;cell_type_col=cell_type_refined
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+PBMC_refined_Perez2022	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false;use_limma_top_genes=true;top_n=3000
+PBMC_refined_Perez2022	TCA	run_TCA.R	config01	15	
+PBMC_refined_Perez2022	Unico	run_Unico.R	config01	15	
+PBMC_refined_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	use_limma_top_genes=true;top_n=3000;chunk_size=300
+PBMC_refined_Perez2022	InstaPrism	run_InstaPrism.R	config07	15	
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+PBMC_refined_Perez2022	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+PBMC_refined_Perez2022	TCA	run_TCA.R	config07	15	
+PBMC_refined_Perez2022	Unico	run_Unico.R	config07	15	
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+PBMC_refined_Perez2022	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+PBMC_refined_Perez2022	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false;use_limma_top_genes=true;top_n=3000
+PBMC_refined_Perez2022	TCA	run_TCA.R	config09	15	
+PBMC_refined_Perez2022	Unico	run_Unico.R	config09	15	
+PBMC_refined_Perez2022	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	
+ROSMAP_AD430_Mathys2023	InstaPrism	run_InstaPrism.R	config01	15	
+ROSMAP_AD430_Mathys2023	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD430_Mathys2023	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD430_Mathys2023	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+ROSMAP_AD430_Mathys2023	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD430_Mathys2023	TCA	run_TCA.R	config01	15	
+ROSMAP_AD430_Mathys2023	Unico	run_Unico.R	config01	15	
+ROSMAP_AD430_Mathys2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+ROSMAP_AD430_Mathys2023	InstaPrism	run_InstaPrism.R	config02	15	
+ROSMAP_AD430_Mathys2023	BLUE	run_BLUE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD430_Mathys2023	scTAPE	run_scTAPE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD430_Mathys2023	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+ROSMAP_AD430_Mathys2023	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD430_Mathys2023	TCA	run_TCA.R	config02	15	
+ROSMAP_AD430_Mathys2023	Unico	run_Unico.R	config02	15	
+ROSMAP_AD430_Mathys2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+ROSMAP_AD430_Mathys2023	InstaPrism	run_InstaPrism.R	config07	15	
+ROSMAP_AD430_Mathys2023	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+ROSMAP_AD430_Mathys2023	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+ROSMAP_AD430_Mathys2023	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD430_Mathys2023	TCA	run_TCA.R	config07	15	
+ROSMAP_AD430_Mathys2023	Unico	run_Unico.R	config07	15	
+ROSMAP_AD430_Mathys2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+ROSMAP_AD430_Mathys2023	InstaPrism	run_InstaPrism.R	config08	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config01	15	
+ROSMAP_AD92_Xiong2023	BLUE	run_BLUE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD92_Xiong2023	scTAPE	run_scTAPE.py	config01	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD92_Xiong2023	CIBERSORTx	run_CIBERSORTx.R	config01	15	
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=L2
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config01	15	ENIGMAmode=trace
+ROSMAP_AD92_Xiong2023	bMIND	run_bMIND.R	config01	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD92_Xiong2023	TCA	run_TCA.R	config01	15	
+ROSMAP_AD92_Xiong2023	Unico	run_Unico.R	config01	15	
+ROSMAP_AD92_Xiong2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config01	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config02	15	
+ROSMAP_AD92_Xiong2023	BLUE	run_BLUE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD92_Xiong2023	scTAPE	run_scTAPE.py	config02	15	ref_sample_subset=true;ref_sample_subset_n=25
+ROSMAP_AD92_Xiong2023	CIBERSORTx	run_CIBERSORTx.R	config02	15	
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=L2
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config02	15	ENIGMAmode=trace
+ROSMAP_AD92_Xiong2023	bMIND	run_bMIND.R	config02	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD92_Xiong2023	TCA	run_TCA.R	config02	15	
+ROSMAP_AD92_Xiong2023	Unico	run_Unico.R	config02	15	
+ROSMAP_AD92_Xiong2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config02	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config03	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config04	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config05	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config06	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config07	15	
+ROSMAP_AD92_Xiong2023	CIBERSORTx	run_CIBERSORTx.R	config07	15	
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=L2
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config07	15	ENIGMAmode=trace
+ROSMAP_AD92_Xiong2023	bMIND	run_bMIND.R	config07	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD92_Xiong2023	TCA	run_TCA.R	config07	15	
+ROSMAP_AD92_Xiong2023	Unico	run_Unico.R	config07	15	
+ROSMAP_AD92_Xiong2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config07	15	
+ROSMAP_AD92_Xiong2023	InstaPrism	run_InstaPrism.R	config08	15	
+ROSMAP_AD92_Xiong2023	CIBERSORTx	run_CIBERSORTx.R	config08	15	
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=L2
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config08	15	ENIGMAmode=trace
+ROSMAP_AD92_Xiong2023	bMIND	run_bMIND.R	config08	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD92_Xiong2023	TCA	run_TCA.R	config08	15	
+ROSMAP_AD92_Xiong2023	Unico	run_Unico.R	config08	15	
+ROSMAP_AD92_Xiong2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config08	15	
+ROSMAP_AD92_Xiong2023	CIBERSORTx	run_CIBERSORTx.R	config09	15	
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=L2
+ROSMAP_AD92_Xiong2023	ENIGMA	run_ENIGMA.R	config09	15	ENIGMAmode=trace
+ROSMAP_AD92_Xiong2023	bMIND	run_bMIND.R	config09	15	export_posterior=true;run_epicunmix=false
+ROSMAP_AD92_Xiong2023	TCA	run_TCA.R	config09	15	
+ROSMAP_AD92_Xiong2023	Unico	run_Unico.R	config09	15	
+ROSMAP_AD92_Xiong2023	EPICunmix_with_posterior	run_EPICunmix_with_posterior.R	config09	15	

@@ -1,0 +1,13 @@
+config_id	bulk_input	bulk_scale	bulk_normalization	frac_input	refType
+config01	wcpm	cpm	cpm	InstaPrismfrac	indep
+config02	sumcount	counts	cpm	InstaPrismfrac	indep
+config03	wcpm_centered_noise	cpm	cpm	InstaPrismfrac	indep
+config04	wcpm_mushift_noise	cpm	cpm	InstaPrismfrac	indep
+config05	sumcount_centered_noise	counts	cpm	InstaPrismfrac	indep
+config06	sumcount_mushift_noise	counts	cpm	InstaPrismfrac	indep
+config07	wcpm	cpm	cpm	InstaPrismfrac	self
+config08	sumcount	counts	cpm	InstaPrismfrac	self
+config09	wcpm	cpm	cpm	truth_cellfrac	self
+config02_tmm	sumcount	counts	tmm	InstaPrismfrac	indep
+config02_uq	sumcount	counts	uq	InstaPrismfrac	indep
+real01	dissociated_polyA	counts	cpm	InstaPrismfrac	self

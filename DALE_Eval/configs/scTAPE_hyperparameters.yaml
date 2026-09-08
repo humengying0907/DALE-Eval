@@ -1,0 +1,48 @@
+# Default internal scTAPE hyperparameters for the benchmark runner.
+#
+# Edit this file to change scTAPE training/simulation/prediction defaults.
+# Benchmark dataset/config selection still comes from deconv_configs.txt and
+# benchmark_ref_assignment.txt.
+
+cell_types:
+  # null means use the required default mapping under the independent reference
+  # folder:
+  #   Indep_scReference/<indep_ref>/celltype_mapping.yaml
+  # A repo-relative or absolute path can point to an override mapping YAML, such
+  # as a smoke-test collapse file. Example block-list format:
+  #   coarse_cell_type:
+  #     - fine_label_1
+  #     - fine_label_2
+  mapping_yaml: null
+
+genes:
+  # null keeps all genes that overlap bulk before scTAPE's own variance filter.
+  # Integer keeps the top variable overlapping genes in the scRNA reference
+  # before simulation, which is useful for smoke tests because scTAPE densifies
+  # the reference matrix internally.
+  max_genes: null
+
+simulation:
+  samplenum: 5000
+  n_cells: 500
+  sparse: true
+  sparse_prob: 0.5
+  rare: false
+  rare_percentage: 0.4
+  random_state: 42
+
+preprocess:
+  datatype: counts
+  scaler: mms
+  variance_threshold: 0.98
+
+training:
+  batch_size: 128
+  epochs: 128
+  seed: 0
+
+prediction:
+  adaptive: true
+  mode: high-resolution
+  adaptive_step: 300
+  adaptive_max_iter: 3

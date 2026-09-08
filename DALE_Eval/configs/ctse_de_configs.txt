@@ -1,0 +1,3 @@
+dataset	phenotype_col	control_level	case_level	ctse_meta_cell_type_col	bmind_de_chunk_size
+PBMC_Perez2022	SLE_status	Healthy	SLE	cell_type_coarse	100
+ROSMAP_AD430_Mathys2023	Pathologic_diagnosis_of_AD	no	yes	Major_Cell_Type	100
