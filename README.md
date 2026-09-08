@@ -4,27 +4,29 @@
 
 ## Introduction
 
-While cell type **fraction** deconvolution has been extensively developed and benchmarked, the next frontier—**cell type–specific expression (CTSE)** deconvolution—remains largely underexplored. Here, we introduce DALE-Eval, a large-scale, biologically grounded benchmark of 10 state-of-the-art CTSE methods across diverse tissues, disease contexts, evaluation settings and downstream tasks.
+While cell type **fraction** deconvolution has been extensively developed and benchmarked, the next frontier—**cell type-specific expression (CTSE)** deconvolution—remains largely underexplored. Here, we introduce DALE-Eval, a large-scale, biologically grounded benchmark of 10 state-of-the-art CTSE methods across diverse tissues, disease contexts, evaluation settings, and downstream tasks.
 
-This GitHub repository is intended primarily to provide the reproducible components of the benchmark, including:
+This GitHub repository is intended to provide the reproducible components of the benchmark, including:
 
-- source code;
+- source code and shared utility functions;
 - benchmark and method configuration files;
 - method runners;
-- evaluation and downstream-analysis code;
-- benchmark-summary and visualization code; and
-- documentation describing how the full benchmark is organized.
+- evaluation and benchmark-summary scripts; and
+- scripts used to construct benchmark inputs and reproduce the analysis workflow.
 
-The **complete DALE-Eval benchmark release**, including the corresponding source data, benchmark objects, deconvolution outputs, intermediate objects, and evaluation results, is available separately at:
+The **complete DALE-Eval benchmark release**, including the corresponding source data, benchmark objects, deconvolution outputs, intermediate objects, evaluation results, and other generated materials, is available separately at:
 
 **https://doi.org/10.5281/zenodo.16649010**
 
-The directory layout below describes the **complete benchmark workspace**. Some large data and result files shown in this layout are therefore not stored directly in the GitHub repository.
+The directory layout below describes the **complete benchmark workspace**. Because of repository size limitations, benchmarking obj, large data files, intermediate objects, and generated results shown in this layout are not stored in this GitHub repository.
+
 
 ---
 
 
-## Directory layout
+## Comprehensive DALE-Eval benchmark directory layout
+
+**Note:** The directory structure below describes the **complete DALE-Eval benchmark workspace** and is provided as a guide to the organization of the full source data, intermediate objects, and benchmark results. This GitHub repository contains only the relevant **scripts, configuration files, and documentation** shown within this layout; large data files and generated benchmark outputs are provided separately as part of the complete benchmark release.
 
 ### Main components
 
